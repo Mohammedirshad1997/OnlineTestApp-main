@@ -1,0 +1,20 @@
+<div class="container bg-light py-4">
+    <h1 style="font-family:cursive; color: blueviolet;">Welcome to Football Quiz</h1>
+    <br>
+
+    <p class="col-md-8 fs-4">The quiz will contains total 9 questions. Each Question hold 1 point</p>
+    <h4>Rules:</h4>
+    <ol>
+        <li>Each correct question will give you 1 point</li>
+        <li>You will get 60 seconds to answer each question</li>
+        <li>Refreshing the page will reset the Quiz</li>
+        <li>There is negative marking of -1 points</li>
+    </ol>
+    <h1 style="font-family:cursive; text-align: center; color: blueviolet;">Good Luck..</h1>
+    <div class="name col-md-4 my-3">
+        <label for="">Enter your name:</label>
+        <input #name type="text" class="form-control">
+    </div>
+    <button class="btn btn-success btn-lg"
+    routerLink="/question" style="margin-left: 15px;" (click)="startQuiz()">Start</button>
+</div>

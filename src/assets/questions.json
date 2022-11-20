@@ -1,0 +1,165 @@
+{
+    "questions": [{
+            "questionText": "Which player scored the fastest hat-trick in the Premier League?",
+            "options": [{
+                    "text": "Sadio Mane",
+                    "correct": true
+                },
+                {
+                    "text": "Andres Iniesta"
+                },
+                {
+                    "text": "Mesut Ozil"
+                },
+                {
+                    "text": "Luis Suarez"
+                }
+            ],
+            "explanation": "Sadio Mane (2 minutes 56 seconds for Southampton vs Aston Villa in 2015)"
+        },
+        {
+            "questionText": "Which Ballon d'Or-winning footballer had a galaxy named after them in 2015?",
+            "options": [{
+                    "text": "Marco Reus"
+                },
+                {
+                    "text": "Karim Benzema"
+                },
+                {
+                    "text": "Lionel Messi"
+                },
+                {
+                    "text": "Cristiano Ronaldo",
+                    "correct": true
+                }
+            ],
+            "explanation": "Cristiano Ronaldo - Galaxy Cosmos Redshift 7 (CR7)"
+        },
+        {
+            "questionText": "Messi famously retired from international duty in which year before reversing his decision?",
+            "options": [{
+                    "text": "2017"
+                },
+                {
+                    "text": "2016",
+                    "correct": true
+                },
+                {
+                    "text": "2018"
+                },
+                {
+                    "text": "2019"
+                }
+            ],
+            "explanation": "2016 (after Copa America final loss)"
+        },
+        {
+            "questionText": "Messi has won a record number of Ballon d'Or awards - how many?",
+            "options": [{
+                    "text": "7"
+                },
+                {
+                    "text": "6",
+                    "correct": true
+                },
+                {
+                    "text": "8"
+                },
+                {
+                    "text": "5"
+                }
+            ],
+            "explanation": "Six Ballon d'Or awards"
+        },
+        {
+            "questionText": "Liverpool have won six Champions Leagues and Manchester United have won three, but who are England's third most successful team in the competition with two titles?",
+            "options": [{
+                    "text": "Nottingham Forest",
+                    "correct": true
+                },
+                {
+                    "text": "Bournemouth"
+                },
+                {
+                    "text": "Aston Villa"
+                },
+                {
+                    "text": "Crystal Palace"
+                }
+            ],
+            "explanation": "Nottingham Forest (1978-79 and 1979-80)"
+        },
+        {
+            "questionText": "The record age for youngest head coach in the Bundesliga is 28 years and 205 days. Who was it?",
+            "options": [{
+                    "text": "Steven Gerrard"
+                },
+                {
+                    "text": "Wayne Rooney"
+                },
+                {
+                    "text": "Ryan Mason"
+                },
+                {
+                    "text": "Julian Nagelsmann",
+                    "correct": true
+                }
+            ],
+            "explanation": "Julian Nagelsmann (at Hoffenheim during the 2015-16 season)"
+        },
+        {
+            "questionText": "I've worn numbers 7, 17, 28 and 9 in my career, playing my football across, England, Spain, Italy and Portugal.?",
+            "options": [{
+                    "text": "Rivaldo"
+                },
+                {
+                    "text": "Cristiano Ronaldo",
+                    "correct": true
+                },
+                {
+                    "text": "Samuel Eto'o"
+                },
+                {
+                    "text": "Yaya Toure"
+                }
+            ],
+            "explanation": "Cristiano Ronaldo"
+        },
+        {
+            "questionText": "Which MLS franchise team does David Beckham own?",
+            "options": [{
+                    "text": "Inter Miami",
+                    "correct": true
+                },
+                {
+                    "text": "Atlanta United FC"
+                },
+                {
+                    "text": "New York City FC"
+                },
+                {
+                    "text": "Toronto FC"
+                }
+            ],
+            "explanation": "Inter Miami"
+        },
+        {
+            "questionText": "Which team won the first Premier League title?",
+            "options": [{
+                    "text": "Manchester United",
+                    "correct": true
+                },
+                {
+                    "text": "Chelsea"
+                },
+                {
+                    "text": "Arsenal"
+                },
+                {
+                    "text": "Everton"
+                }
+            ],
+            "explanation": "Manchester United"
+        }
+    ]
+}

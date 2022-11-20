@@ -1,0 +1,85 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="d-flex justify-content-between p-3">
+            <div class="quiz-header">
+                <h4 style="font-family: italic; text-align: center;">Welcome to the Football Quiz!</h4>
+                <p style="font-style: italic;">Welcome {{name}}</p>
+            </div>
+        </div>
+        <ng-container *ngIf="!isQuizCompleted">
+            <div class="d-flex justify-content-around py-3">
+                
+            <div class="question-remain">
+                <span style="font-style: italic;">Question {{currentQuestion+1}} of {{questionList.length}}</span>
+            </div>
+            <div class="timer">
+                <h6>{{counter}} secs</h6>
+            </div>
+        </div>
+        <div class="question">
+            <div class="card">
+                <h3>{{questionList[currentQuestion]?.questionText}}</h3>
+            </div>
+        </div>
+        <div class="options">
+            <ol *ngFor="let option of questionList[currentQuestion]?.options" >
+                <li (click)="answer(currentQuestion+1,option)">
+                    <div appChangeBg [isCorrect]="option.correct" class="card">
+                        {{option.text}}
+                    </div>
+                
+            </ol>
+        </div>
+        <div class="d-flex justify-content-between">
+           
+            <button class="btn btn-secondary" (click)="resetQuiz()">Reset</button>
+            <button class="btn btn-primary" [disabled]="currentQuestion===questionList.length-1" (click)="nextQuestion()">Next</button>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="isQuizCompleted">
+        <div class="row d-flex justify-content-between">
+            <div class="result text-center col-md-6 col-sm-12" style="margin-left: 200px;">
+                <h3 style="font-family:cursive; text-align: center; color: blueviolet">Congratulations! <br>You have completed the quiz. <br>Below is your result:</h3>
+                <p>Total Questions Attempted : {{questionList.length}}</p>
+                <p>Total Correct Answered : {{correctAnswer}}</p>
+                <p>Total Wrong Answered : {{inCorrectAnswer}}</p>
+                <h6 style="font-family:cursive; text-align: center; color: blueviolet; font-size: larger;">Your Score : {{points}} Points</h6>
+            
+                
+            </div>
+           
+            
+            <div>
+             <p>-----------------------------------------------------------------------------------------------------------------------------</p>   
+            </div>
+
+            
+        </div>
+        <div >
+            <h5 style="color: red">Questions and Correct Answers!</h5>
+            <p>Q1. Which player scored the fastest hat-trick in the Premier League?</p>
+            <h6 style="font-family:cursive;  color: green">A1. Sadio Mane (2 minutes 56 seconds for Southampton vs Aston Villa in 2015)</h6>
+            <p>Q2. Which Ballon d'Or-winning footballer had a galaxy named after them in 2015?</p>
+            <h6 style="font-family:cursive;  color: green">A2. Cristiano Ronaldo - Galaxy Cosmos Redshift 7 (CR7)</h6>
+            <p>Q3. Messi famously retired from international duty in which year before reversing his decision?</p>
+            <h6 style="font-family:cursive;  color: green">A3. 2016 (after Copa America final loss)</h6>
+            <p>Q4. Messi has won a record number of Ballon d'Or awards - how many?</p>
+            <h6 style="font-family:cursive;  color: green">A4. Six Ballon d'Or awards</h6>
+            <p>Q5. Liverpool have won six Champions Leagues and Manchester United have won three, but who are England's third most successful team in the competition with two titles?</p>
+            <h6 style="font-family:cursive; color: green">A5. Nottingham Forest (1978-79 and 1979-80)</h6>
+            <p>Q6. The record age for youngest head coach in the Bundesliga is 28 years and 205 days. Who was it?</p>
+            <h6 style="font-family:cursive;  color: green">A6. Julian Nagelsmann (at Hoffenheim during the 2015-16 season)</h6>
+            <p>Q7. I've worn numbers 7, 17, 28 and 9 in my career, playing my football across, England, Spain, Italy and Portugal.?</p>
+            <h6 style="font-family:cursive; color: green">A7. Cristiano Ronaldo</h6>
+            <p>Q8. Which MLS franchise team does David Beckham own?</p>
+            <h6 style="font-family:cursive;  color: green">A8. Inter Miami</h6>
+            <p>Q9. Which team won the first Premier League title?</p>
+            <h6 style="font-family:cursive; color: green">A9. Manchester United</h6>
+          
+        
+        </div>
+    </ng-container>
+  
+    </div>
+  
+</div>
